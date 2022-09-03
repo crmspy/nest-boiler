@@ -1,0 +1,37 @@
+##get main
+GET http://localhost:3000/cats
+content-type: application/json
+
+###
+
+POST http://localhost:3000/cats
+content-type: application/json
+
+{
+  "name": "su",
+  "age": 12,
+  "breed": "ashu"
+}
+
+###get mainx
+GET http://localhost:3000/cats/x
+content-type: application/json
+
+
+###get cats
+GET http://localhost:3000/cats
+content-type: application/json
+
+###delete
+DELETE  http://localhost:3000/cats/4
+content-type: application/json
+
+###delete
+PATCH  http://localhost:3000/cats/5
+content-type: application/json
+
+{
+  "name": "nurul",
+  "age": 12,
+  "breed": "ashu"
+}

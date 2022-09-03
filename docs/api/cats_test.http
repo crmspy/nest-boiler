@@ -1,0 +1,66 @@
+##get main
+GET http://localhost:3000
+content-type: application/json
+
+###get cats
+GET http://localhost:3000/cats
+content-type: application/json
+
+###get number
+GET http://localhost:3000/cats/number
+content-type: application/json
+
+###post object
+POST http://localhost:3000/cats/object
+content-type: application/json
+
+{
+    "loh": "lawak"
+}
+
+###get docs
+GET http://localhost:3000/cats/docs?version=5
+content-type: application/json
+
+
+###get id
+GET http://localhost:3000/cats/id/123
+content-type: application/json
+
+
+
+###get async
+GET http://localhost:3000/cats/async
+content-type: application/json
+
+###get observable
+GET http://localhost:3000/cats/observable
+content-type: application/json
+
+###post create
+POST http://localhost:3000/cats/create
+content-type: application/json
+
+{
+  "namez": "string",
+  "agez": 12,
+  "breez": "string"
+}
+
+###get observable
+GET http://localhost:3000/cats/exception-manual
+content-type: application/json
+
+###get exception custom
+GET http://localhost:3000/cats/exception-custom
+content-type: application/json
+
+###get exception filter
+POST http://localhost:3000/cats/exception-filter
+content-type: application/json
+
+{
+  "namex": "string",
+  "age": 12,
+  "bree": "string"
+}
